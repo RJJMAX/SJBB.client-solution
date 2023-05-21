@@ -1,0 +1,39 @@
+<div>
+    <header>
+        <span id="pageTitle">{{pageTitle}}</span>
+    </header>
+    <main>
+        <table class="table table-lg table-striped" *ngIf="employee">
+            <tbody>
+                <tr>
+                    <td>Id</td>
+                    <td><input [(ngModel)]="employee.id" readonly></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input [(ngModel)]="employee.username" readonly></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input [(ngModel)]="employee.password" readonly></td>
+                </tr>
+                <tr>
+                    <td>Firstname</td>
+                    <td><input [(ngModel)]="employee.firstname" readonly></td>
+                </tr>
+                <tr>
+                    <td>Lastname</td>
+                    <td><input [(ngModel)]="employee.lastname" readonly></td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td><input [(ngModel)]="employee.phone" readonly></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input [(ngModel)]="employee.email" readonly></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>>

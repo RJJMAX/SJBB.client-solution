@@ -1,0 +1,37 @@
+<div>
+    <header>
+        <span id="pageTitle">{{pageTitle}}</span>
+        <span> | </span>
+        <a routerLink="/employee/create" class="">New Employee</a>
+    </header>
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let e of employees">
+                <td>{{e.id}}</td>
+                <td>{{e.username}}</td>
+                <td>{{e.password}}</td>
+                <td>{{e.firstname}}</td>
+                <td>{{e.lastname}}</td>
+                <td>{{e.phone}}</td>
+                <td>{{e.email}}</td>
+                <td>
+                    <a routerLink="/employee/detail/{{e.id}}">View</a>
+                    <span> | </span>
+                    <a routerLink="/employee/edit/{{e.id}}">Edit</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
